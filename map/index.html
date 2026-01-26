@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRA Atlas - Mayurbhanj Demo</title>
+
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Plugin for Arrows -->
+    <script src="https://unpkg.com/leaflet-polylinedecorator@1.6.0/dist/leaflet.polylineDecorator.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Header Bar -->
+    <div class="top-bar no-print">
+        <div id="menu-button"><span></span><span></span><span></span></div>
+        <h1>Home</h1>
+    </div>
+
+    <div id="app-container">
+        <!-- Sidebar Menu -->
+        <div id="sidebar" class="sidebar no-print">
+            <div class="sidebar-content">
+                <div class="lang-switcher-sidebar">
+                    <button id="sidebar-lang-en-btn" data-translate-key="langEnglish"></button>
+                    <button id="sidebar-lang-or-btn" class="active" data-translate-key="langOdia"></button>
+                    <button id="sidebar-lang-hi-btn" data-translate-key="langHindi"></button>
+                </div>
+                <div class="location-box">
+                    <h4 data-translate-key="sidebarLocation"></h4>
+                    <label for="state" data-translate-key="sidebarState"></label>
+                    <input type="text" id="state" value="Odisha" disabled>
+                    <label for="district" data-translate-key="sidebarDistrict"></label>
+                    <select id="district"><option data-translate-key="districtOption"></option></select>
+                    <label for="tehsil" data-translate-key="sidebarTehsil"></label>
+                    <select id="tehsil"><option data-translate-key="tehsilOption"></option></select>
+                    <label for="ri" data-translate-key="sidebarRI"></label>
+                    <select id="ri"><option data-translate-key="riOption"></option></select>
+                    <label for="village" data-translate-key="sidebarVillage"></label>
+                    <select id="village"><option data-translate-key="villageOption"></option></select>
+                    <label for="sheet-no" data-translate-key="sidebarSheetNo"></label>
+                    <select id="sheet-no"><option data-translate-key="sheetNoOption"></option></select>
+                </div>
+                <div id="plot-info-box" class="plot-info-box">
+                    <h4 data-translate-key="sidebarPlotInfo"></h4>
+                    <div id="plot-info-content">
+                        <p data-translate-key="sidebarPlotInfoPrompt"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Map Container -->
+        <div id="map" class="no-print"></div>
+    </div>
+
+    <!-- Detail Page (Hidden by default) -->
+    <div id="detail-page" class="hidden">
+        <div class="detail-page-header no-print">
+            <button id="back-button" data-translate-key="backButton"></button>
+            <div class="lang-switcher">
+                <button id="lang-en-btn" data-translate-key="langEnglish"></button>
+                <button id="lang-or-btn" class="active" data-translate-key="langOdia"></button>
+                <button id="lang-hi-btn" data-translate-key="langHindi"></button>
+            </div>
+        </div>
+        <div class="form-header">
+            <p data-translate-key="formSchedule"></p>
+            <h1 data-translate-key="formTitle"></h1>
+        </div>
+        <div class="form-meta">
+            <div>
+                <p><strong data-translate-key="labelDistrict"></strong> <span data-translate-key="valueDistrict"></span></p>
+                <p><strong data-translate-key="labelPoliceStation"></strong> <span data-translate-key="valuePoliceStation"></span></p>
+                <p><strong data-translate-key="labelPoliceStationNo"></strong> <span data-translate-key="valuePoliceStationNo"></span></p>
+            </div>
+            <div>
+                <p><strong data-translate-key="labelTehsil"></strong> <span data-translate-key="valueTehsil"></span></p>
+                <p><strong data-translate-key="labelMouza"></strong> <span id="detail-village"></span></p>
+                <p><strong data-translate-key="labelKhataNo"></strong> <span id="detail-khata"></span></p>
+                <p><strong data-translate-key="labelStatus"></strong> <span id="detail-status"></span></p>
+            </div>
+        </div>
+        <table class="form-table">
+            <thead>
+                <tr><th colspan="2" data-translate-key="headerOwnerInfo"></th><th colspan="5" data-translate-key="headerTenantInfo"></th></tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="2" data-translate-key="valueOwnershipType"></td>
+                    <td colspan="5">
+                        <span id="detail-owner"></span>
+                        <div class="father-name-container">
+                            (<span data-translate-key="labelFatherName"></span>: <span id="detail-father-name"></span>)
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong data-translate-key="labelSerialNo"></strong></td><td id="detail-serial"></td>
+                    <td rowspan="2"><strong data-translate-key="labelLandClass"></strong></td>
+                    <td colspan="4" rowspan="2" id="detail-class" data-translate-key="landClassValue"></td>
+                </tr>
+                <tr><td><strong data-translate-key="labelPlotNo"></strong></td><td id="detail-plot-no"></td></tr>
+                <tr>
+                    <td rowspan="2"><strong data-translate-key="labelArea"></strong></td><td data-translate-key="unitAcre"></td>
+                    <td data-translate-key="unitDecimal"></td><td data-translate-key="headerBoundaries"></td>
+                    <td data-translate-key="headerRemarks"></td><td rowspan="2"><strong data-translate-key="headerRightsInfo"></strong></td>
+                </tr>
+                <tr><td id="detail-area-acre"></td><td id="detail-area-decimil"></td><td>--</td><td>--</td></tr>
+            </tbody>
+        </table>
+        <div id="dss-recommendation-box" class="hidden">
+            <h4 data-translate-key="dssTitle"></h4>
+            <p><strong data-translate-key="dssRecommendedSchemeLabel"></strong> <span id="dss-scheme-name"></span></p>
+        </div>
+        <div class="form-footer"><p data-translate-key="footerStamp"></p></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

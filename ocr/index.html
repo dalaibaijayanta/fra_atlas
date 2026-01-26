@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>FRA OCR Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tesseract.js -->
+    <script src="https://unpkg.com/tesseract.js@v4.1.1/dist/tesseract.min.js"></script>
+
+    <!-- Google Fonts (optional, for professional typography) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>🌾 FRA OCR Management</h1>
+        <p>Upload scanned pattas / land records (English, Hindi, Odia). OCR runs directly in your browser.</p>
+    </header>
+
+    <main class="container">
+        <!-- LEFT: Upload + OCR Controls -->
+        <section class="left">
+            <div class="card">
+                <h2>📂 Upload File</h2>
+                <label class="filebox">
+                    <input id="fileInput" type="file" accept="image/*,application/pdf" />
+                    <span>Select Image / PDF</span>
+                </label>
+
+                <h3>🌐 Select Language(s)</h3>
+                <div class="controls">
+                    <label><input type="checkbox" id="lang-eng" checked /> English (eng)</label>
+                    <label><input type="checkbox" id="lang-hin" checked /> Hindi (hin)</label>
+                    <label><input type="checkbox" id="lang-ori" /> Odia (ori)</label>
+                </div>
+
+                <button id="startOcr" class="btn primary">🚀 Start OCR</button>
+
+                <div id="previewWrap">
+                    <p><strong>Preview:</strong></p>
+                    <img id="preview" alt="Preview will appear here" />
+                </div>
+
+                <div class="meta">
+                    <input id="title" placeholder="Title (e.g., 'Patta - Ram Naik')" />
+                    <input id="village" placeholder="Village / Gram Panchayat" />
+                </div>
+
+                <div id="progress" class="progress">Idle</div>
+            </div>
+        </section>
+
+        <!-- RIGHT: OCR Results + Saved Records -->
+        <section class="right">
+            <div class="card">
+                <h2>📝 Extracted Text</h2>
+                <textarea id="extractedText" placeholder="OCR result appears here..." rows="14"></textarea>
+
+                <div class="buttons">
+                    <button id="saveRecord" class="btn success">💾 Save Record</button>
+                    <button id="downloadText" class="btn secondary">⬇ Download .txt</button>
+                    <button id="clear" class="btn danger">🧹 Clear</button>
+                </div>
+
+                <hr />
+
+                <h2>📑 Saved Records (Latest)</h2>
+                <div id="recordsList" class="records">Loading...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <small>
+            ⚠ Prototype — Not for production use. <br>
+            For better accuracy, add Odia <code>traineddata</code> to tessdata or host locally with
+            <code>langPath</code>.
+        </small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

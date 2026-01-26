@@ -1,0 +1,73 @@
+body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+.hidden { display: none !important; }
+
+/* --- Top Header Bar --- */
+.top-bar { position: fixed; top: 0; left: 0; width: 100%; height: 50px; background-color: #007bff; color: white; display: flex; align-items: center; z-index: 1001; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+.top-bar h1 { margin: 0 0 0 15px; font-size: 1.5em; font-weight: normal; }
+
+/* --- Menu Button (Hamburger) --- */
+#menu-button { width: 40px; height: 40px; background-color: transparent; border-radius: 5px; cursor: pointer; display: flex; flex-direction: column; justify-content: space-around; align-items: center; padding: 8px 5px; box-sizing: border-box; margin-left: 10px; }
+#menu-button span { display: block; height: 3px; width: 100%; background: white; border-radius: 3px; }
+
+/* --- Map Container --- */
+#map { position: absolute; top: 50px; height: calc(100vh - 50px); width: 100vw; z-index: 1; }
+
+/* --- Sidebar --- */
+.sidebar { position: absolute; top: 50px; left: 0; height: calc(100vh - 50px); width: 320px; background-color: #f4f4f4; z-index: 999; transform: translateX(-100%); transition: transform 0.3s ease-in-out; box-shadow: 2px 0 5px rgba(0,0,0,0.1); display: flex; flex-direction: column; }
+.sidebar.visible { transform: translateX(0); }
+.sidebar-content { padding: 20px 15px; overflow-y: auto; }
+.location-box, .plot-info-box { background-color: white; border: 1px solid #ccc; border-radius: 5px; padding: 15px; margin-bottom: 20px; }
+.plot-info-box { background-color: #eafaea; border-color: #c8e6c9; }
+label { display: block; margin-top: 10px; margin-bottom: 5px; font-size: 0.9em; color: #333; }
+input[type="text"], select { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+input[disabled] { background-color: #e9ecef; }
+#plot-info-content p { margin: 0; font-size: 0.9em; }
+#plot-info-content strong { color: #333; }
+
+/* --- Detail Page Styles --- */
+#detail-page { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: white; z-index: 2000; padding: 20px; box-sizing: border-box; overflow-y: auto; }
+.detail-page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+#back-button { background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; }
+
+/* --- Language Switchers --- */
+.lang-switcher, .lang-switcher-sidebar { display: flex; }
+.lang-switcher button, .lang-switcher-sidebar button { background-color: #f0f0f0; border: 1px solid #ccc; padding: 8px 15px; cursor: pointer; }
+.lang-switcher button:first-child, .lang-switcher-sidebar button:first-child { border-top-left-radius: 5px; border-bottom-left-radius: 5px; }
+.lang-switcher button:not(:first-child), .lang-switcher-sidebar button:not(:first-child) { border-left: none; }
+.lang-switcher button:last-child, .lang-switcher-sidebar button:last-child { border-top-right-radius: 5px; border-bottom-right-radius: 5px; }
+.lang-switcher button.active, .lang-switcher-sidebar button.active { background-color: #007bff; color: white; border-color: #007bff; }
+.lang-switcher-sidebar { margin-bottom: 20px; }
+.lang-switcher-sidebar button { width: 33.333%; }
+
+/* --- Form Styles --- */
+.form-header { text-align: center; margin-bottom: 20px; }
+.form-header h1 { color: #d9534f; margin: 0; }
+.form-meta { display: flex; justify-content: space-between; padding: 0 10%; margin-bottom: 20px; border-bottom: 2px solid black; padding-bottom: 10px; }
+.form-meta p { margin: 5px 0; }
+.father-name-container { font-size: 0.9em; color: #555; }
+.form-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+.form-table th, .form-table td { border: 1px solid black; padding: 8px; text-align: center; }
+.form-table th { background-color: #f2f2f2; }
+.form-table td strong { color: #d9534f; }
+.form-footer { border-top: 2px solid black; padding-top: 10px; text-align: center; }
+
+/* --- DSS Recommendation Box Style --- */
+#dss-recommendation-box { margin-top: 20px; padding: 10px 15px; border: 2px solid #28a745; background-color: #f0fff4; border-radius: 5px; }
+#dss-recommendation-box h4 { margin: 0 0 10px 0; color: #28a745; text-align: center; }
+#dss-recommendation-box p { margin: 0; }
+#dss-recommendation-box ul { padding-left: 20px; margin: 0; }
+
+/* --- Custom Map Controls --- */
+.leaflet-bar a, .leaflet-bar a:hover { color: black; text-decoration: none; }
+.custom-map-control { background-color: white; border: 2px solid rgba(0,0,0,0.2); border-radius: 4px; box-shadow: 0 1px 5px rgba(0,0,0,0.65); cursor: pointer; text-align: center; }
+.custom-map-control a { display: block; width: 30px; height: 30px; line-height: 30px; font-size: 1.4em; }
+.custom-map-control a:hover { background-color: #f4f4f4; }
+.water-arrow-path { stroke-dasharray: 10, 15; stroke-dashoffset: 300; animation: dash 2s linear infinite; }
+@keyframes dash { to { stroke-dashoffset: 0; } }
+
+/* --- Print-Specific Styles --- */
+@media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .no-print { display: none !important; }
+    #detail-page { position: static; height: auto; width: auto; overflow: visible; box-shadow: none; border: none; }
+}

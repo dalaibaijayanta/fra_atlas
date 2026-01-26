@@ -1,0 +1,281 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Sanjay Murmu", "owner_or": "ସଞ୍ଜୟ ମୁର୍ମୁ", "owner_hi": "संजय मुर्मू",
+        "father_name": "Jadu Murmu", "father_name_or": "ଯଦୁ ମୁର୍ମୁ", "father_name_hi": "जादू मुर्मू",
+        "plot_no": "301", "plot_no_or": "୩୦୧", "plot_no_hi": "३०१",
+        "area_acres": 0.4,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusApproved"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33825, 21.85728], [86.33878, 21.85735], [86.33860, 21.85695], [86.33815, 21.85687], [86.33825, 21.85728] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Sumitra Hembram", "owner_or": "ସୁମିତ୍ରା ହେମ୍ବ୍ରମ", "owner_hi": "सुमित्रा हेम्ब्रम",
+        "father_name": "Gopinath Hembram", "father_name_or": "ଗୋପୀନାଥ ହେମ୍ବ୍ରମ", "father_name_hi": "गोपीनाथ हेम्ब्रम",
+        "plot_no": "302", "plot_no_or": "୩୦୨", "plot_no_hi": "३०२",
+        "area_acres": 0.5,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusPending"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33628, 21.85755], [86.33675, 21.85768], [86.33660, 21.85705], [86.33610, 21.85718], [86.33628, 21.85755] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Rabi Tudu", "owner_or": "ରବି ଟୁଡୁ", "owner_hi": "रबी टुडू",
+        "father_name": "Kailash Tudu", "father_name_or": "କୈଳାଶ ଟୁଡୁ", "father_name_hi": "कैलाश टुडू",
+        "plot_no": "303", "plot_no_or": "୩୦୩", "plot_no_hi": "३०३",
+        "area_acres": 0.6,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusApproved"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33630, 21.85810], [86.33698, 21.85820], [86.33675, 21.85760], [86.33618, 21.85770], [86.33630, 21.85810] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Lakhan Soren", "owner_or": "ଲଖନ ସୋରେନ", "owner_hi": "लखन सोरेन",
+        "father_name": "Bhuban Soren", "father_name_or": "ଭୁବନ ସୋରେନ", "father_name_hi": "भुबन सोरेन",
+        "plot_no": "304", "plot_no_or": "୩୦୪", "plot_no_hi": "३०४",
+        "area_acres": 0.5,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusRejected"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33915, 21.85685], [86.33970, 21.85698], [86.33955, 21.85635], [86.33900, 21.85645], [86.33915, 21.85685] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Ganesh Baskey", "owner_or": "ଗଣେଶ ବାସ୍କେ", "owner_hi": "गणेश बास्के",
+        "father_name": "Iswar Baskey", "father_name_or": "ଈଶ୍ୱର ବାସ୍କେ", "father_name_hi": "ईश्वर बास्के",
+        "plot_no": "305", "plot_no_or": "୩୦୫", "plot_no_hi": "३०५",
+        "area_acres": 0.7,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusPending"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33715, 21.85638], [86.33780, 21.85645], [86.33760, 21.85590], [86.33700, 21.85595], [86.33715, 21.85638] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Arjun Singh", "owner_or": "ଅର୍ଜୁନ ସିଂ", "owner_hi": "अर्जुन सिंह",
+        "father_name": "Ratan Singh", "father_name_or": "ରତନ ସିଂ", "father_name_hi": "रतन सिंह",
+        "plot_no": "306", "plot_no_or": "୩୦୬", "plot_no_hi": "३०६",
+        "area_acres": 0.9,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusApproved"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33985, 21.85739], [86.34048, 21.85747], [86.34025, 21.85684], [86.33970, 21.85689], [86.33985, 21.85739] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Priya Naik", "owner_or": "ପ୍ରିୟା ନାୟକ", "owner_hi": "प्रिया नाइक",
+        "father_name": "Mohan Naik", "father_name_or": "ମୋହନ ନାୟକ", "father_name_hi": "मोहन नाइक",
+        "plot_no": "307", "plot_no_or": "୩୦୭", "plot_no_hi": "३०७",
+        "area_acres": 1.2,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusApproved"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.34065, 21.85755], [86.34130, 21.85768], [86.34105, 21.85702], [86.34050, 21.85707], [86.34065, 21.85755] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Sunil Majhi", "owner_or": "ସୁନୀଲ ମାଝୀ", "owner_hi": "सुनील माझी",
+        "father_name": "Gopal Majhi", "father_name_or": "ଗୋପାଳ ମାଝୀ", "father_name_hi": "गोपाल माझी",
+        "plot_no": "308", "plot_no_or": "୩୦୮", "plot_no_hi": "३०८",
+        "area_acres": 0.3,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusPending"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33965, 21.85618], [86.34020, 21.85623], [86.33995, 21.85574], [86.33950, 21.85576], [86.33965, 21.85618] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Anita Das", "owner_or": "ଅନିତା ଦାସ", "owner_hi": "अनीता दास",
+        "father_name": "Bimal Das", "father_name_or": "ବିମଳ ଦାସ", "father_name_hi": "बिमल दास",
+        "plot_no": "309", "plot_no_or": "୩୦୯", "plot_no_hi": "३०९",
+        "area_acres": 0.8,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusApproved"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33838, 21.85567], [86.33900, 21.85579], [86.33875, 21.85524], [86.33820, 21.85526], [86.33838, 21.85567] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Manoj Kumar", "owner_or": "ମନୋଜ କୁମାର", "owner_hi": "मनोज कुमार",
+        "father_name": "Suresh Kumar", "father_name_or": "ସୁରେଶ କୁମାର", "father_name_hi": "सुरेश कुमार",
+        "plot_no": "310", "plot_no_or": "୩୧୦", "plot_no_hi": "३१०",
+        "area_acres": 1.5,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusApproved"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33705, 21.85537], [86.33770, 21.85549], [86.33745, 21.85493], [86.33690, 21.85498], [86.33705, 21.85537] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Deepa Sethi", "owner_or": "ଦୀପା ସେଠୀ", "owner_hi": "दीपा सेठी",
+        "father_name": "Ramesh Sethi", "father_name_or": "ରମେଶ ସେଠୀ", "father_name_hi": "रमेश सेठी",
+        "plot_no": "311", "plot_no_or": "୩୧୧", "plot_no_hi": "३११",
+        "area_acres": 0.6,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusPending"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33585, 21.85547], [86.33648, 21.85558], [86.33623, 21.85504], [86.33570, 21.85506], [86.33585, 21.85547] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Rajesh Barik", "owner_or": "ରାଜେଶ ବାରିକ", "owner_hi": "राजेश बारिक",
+        "father_name": "Dinesh Barik", "father_name_or": "ଦିନେଶ ବାରିକ", "father_name_hi": "दिनेश बारिक",
+        "plot_no": "312", "plot_no_or": "୩୧୨", "plot_no_hi": "३१२",
+        "area_acres": 0.4,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusRejected"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33485, 21.85727], [86.33550, 21.85738], [86.33525, 21.85683], [86.33470, 21.85688], [86.33485, 21.85727] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Sita Murmu", "owner_or": "ସୀତା ମୁର୍ମୁ", "owner_hi": "सीता मुर्मू",
+        "father_name": "Jiten Murmu", "father_name_or": "ଜିତେନ ମୁର୍ମୁ", "father_name_hi": "जितेन मुर्मू",
+        "plot_no": "313", "plot_no_or": "୩୧୩", "plot_no_hi": "३१३",
+        "area_acres": 0.9,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusApproved"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33468, 21.85806], [86.33530, 21.85818], [86.33505, 21.85763], [86.33450, 21.85768], [86.33468, 21.85806] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Vikram Marndi", "owner_or": "ବିକ୍ରମ ମାରାଣ୍ଡି", "owner_hi": "विक्रम मरांडी",
+        "father_name": "Hari Marndi", "father_name_or": "ହରି ମାରାଣ୍ଡି", "father_name_hi": "हरि मरांडी",
+        "plot_no": "314", "plot_no_or": "୩୧୪", "plot_no_hi": "३१४",
+        "area_acres": 1.1,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusApproved"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33545, 21.85827], [86.33610, 21.85839], [86.33585, 21.85784], [86.33530, 21.85789], [86.33545, 21.85827] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Laxmi Hansda", "owner_or": "ଲକ୍ଷ୍ମୀ ହାଁସଦା", "owner_hi": "लक्ष्मी हांसदा",
+        "father_name": "Sagar Hansda", "father_name_or": "ସାଗର ହାଁସଦା", "father_name_hi": "सागर हांसदा",
+        "plot_no": "315", "plot_no_or": "୩୧୫", "plot_no_hi": "३१५",
+        "area_acres": 0.7,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusPending"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33718, 21.85836], [86.33780, 21.85848], [86.33755, 21.85793], [86.33700, 21.85798], [86.33718, 21.85836] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Chandan Patra", "owner_or": "ଚନ୍ଦନ ପାତ୍ର", "owner_hi": "चंदन पात्रा",
+        "father_name": "Anil Patra", "father_name_or": "ଅନିଲ ପାତ୍ର", "father_name_hi": "अनिल पात्रा",
+        "plot_no": "316", "plot_no_or": "୩୧୬", "plot_no_hi": "३१६",
+        "area_acres": 0.2,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusPending"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33805, 21.85857], [86.33870, 21.85869], [86.33845, 21.85814], [86.33790, 21.85819], [86.33805, 21.85857] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Geeta Behera", "owner_or": "ଗୀତା ବେହେରା", "owner_hi": "गीता बेहरा",
+        "father_name": "Kamal Behera", "father_name_or": "କମଳ ବେହେରା", "father_name_hi": "कमल बेहरा",
+        "plot_no": "317", "plot_no_or": "୩୧୭", "plot_no_hi": "३१७",
+        "area_acres": 0.5,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusApproved"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.33905, 21.85827], [86.33970, 21.85839], [86.33945, 21.85784], [86.33890, 21.85789], [86.33905, 21.85827] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Nabin Swain", "owner_or": "ନବୀନ ସ୍ୱାଇଁ", "owner_hi": "नवीन स्वाईं",
+        "father_name": "Raju Swain", "father_name_or": "ରାଜୁ ସ୍ୱାଇଁ", "father_name_hi": "राजू स्वाईं",
+        "plot_no": "318", "plot_no_or": "୩୧୮", "plot_no_hi": "३१८",
+        "area_acres": 1.3,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusApproved"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.34005, 21.85806], [86.34070, 21.85819], [86.34045, 21.85762], [86.33990, 21.85767], [86.34005, 21.85806] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Sarita Singh", "owner_or": "ସରିତା ସିଂ", "owner_hi": "सरिता सिंह",
+        "father_name": "Ajay Singh", "father_name_or": "ଅଜୟ ସିଂ", "father_name_hi": "अजय सिंह",
+        "plot_no": "319", "plot_no_or": "୩୧୯", "plot_no_hi": "३१९",
+        "area_acres": 0.6,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusPending"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.34155, 21.85687], [86.34220, 21.85699], [86.34195, 21.85644], [86.34140, 21.85649], [86.34155, 21.85687] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Amit Mahato", "owner_or": "ଅମିତ ମହାତୋ", "owner_hi": "अमित महतो",
+        "father_name": "Prakash Mahato", "father_name_or": "ପ୍ରକାଶ ମହାତୋ", "father_name_hi": "प्रकाश महतो",
+        "plot_no": "320", "plot_no_or": "୩୨୦", "plot_no_hi": "३२०",
+        "area_acres": 0.8,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusApproved"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.34165, 21.85626], [86.34230, 21.85638], [86.34205, 21.85583], [86.34150, 21.85588], [86.34165, 21.85626] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Rekha Devi", "owner_or": "ରେଖା ଦେବୀ", "owner_hi": "रेखा देवी",
+        "father_name": "Santosh Prasad", "father_name_or": "ସନ୍ତୋଷ ପ୍ରସାଦ", "father_name_hi": "संतोष प्रसाद",
+        "plot_no": "321", "plot_no_or": "୩୨୧", "plot_no_hi": "३२१",
+        "area_acres": 1.0,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusApproved"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.34055, 21.85557], [86.34120, 21.85569], [86.34095, 21.85514], [86.34040, 21.85519], [86.34055, 21.85557] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Karan Tanti", "owner_or": "କରଣ ଟାଣ୍ଟି", "owner_hi": "करण तांती",
+        "father_name": "Bijay Tanti", "father_name_or": "ବିଜୟ ଟାଣ୍ଟି", "father_name_hi": "विजय तांती",
+        "plot_no": "322", "plot_no_or": "୩୨୨", "plot_no_hi": "३२२",
+        "area_acres": 0.5,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusPending"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.34255, 21.85727], [86.34320, 21.85739], [86.34295, 21.85684], [86.34240, 21.85689], [86.34255, 21.85727] ] ] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "owner": "Bikash Munda", "owner_or": "ବିକାଶ ମୁଣ୍ଡା", "owner_hi": "बिकाश मुंडा",
+        "father_name": "Samir Munda", "father_name_or": "ସମୀର ମୁଣ୍ଡା", "father_name_hi": "समीर मुंडा",
+        "plot_no": "323", "plot_no_or": "୩୨୩", "plot_no_hi": "३२३",
+        "area_acres": 0.7,
+        "village": "Gudugudia Settlement (Demo)", "village_or": "ଗୁଡ଼ୁଗୁଡ଼ିଆ ବସ୍ତି (ଡେମୋ)", "village_hi": "गुड़गुड़िया सेटलमेंट (डेमो)",
+        "statusKey": "statusApproved"
+      },
+      "geometry": { "type": "Polygon", "coordinates": [ [ [86.34265, 21.85786], [86.34330, 21.85798], [86.34305, 21.85743], [86.34250, 21.85748], [86.34265, 21.85786] ] ] }
+    }
+  ]
+}

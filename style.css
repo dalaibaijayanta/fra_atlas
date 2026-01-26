@@ -1,0 +1,251 @@
+/* 🌌 Global Styles */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* ✨ Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeDown 1.2s ease forwards;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 70px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.logo:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 15px #00ffff);
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #00ffff;
+    text-shadow: 0 0 12px #00ffff;
+    margin: 0;
+}
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #00ffff;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+.main-nav a:hover {
+    color: #00ffff;
+}
+
+/* 🖼 Content Sections */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+/* Glass Card */
+.glass-card {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 450px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 35px rgba(0, 255, 255, 0.8);
+}
+
+/* Titles */
+.glass-card h2 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    text-shadow: 0 0 8px #ffcc00;
+    margin-bottom: 15px;
+    animation: glowPulse 2s infinite alternate;
+}
+
+/* About Text */
+#aboutText {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 0.5s ease;
+    cursor: default;
+    white-space: pre-line;
+    /* Preserve line breaks */
+}
+
+/* Video Card */
+.video-card .video-wrapper {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+    animation: glowCycle 3s infinite alternate;
+}
+
+.video-card video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.2), rgba(0, 0, 0, 0.3));
+    pointer-events: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    backdrop-filter: blur(10px);
+}
+
+/* Animations */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glowPulse {
+    0% {
+        text-shadow: 0 0 10px #ffcc00;
+    }
+
+    100% {
+        text-shadow: 0 0 20px #ff6600;
+    }
+}
+
+@keyframes glowCycle {
+    0% {
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    }
+
+    100% {
+        box-shadow: 0 0 35px rgba(0, 255, 255, 1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .glass-card {
+        width: 90%;
+        max-width: 600px;
+    }
+}
+
+/* Main Content Wrapper with Background Video */
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+/* Background Video */
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Dim overlay to reduce brightness of video */
+.content-wrapper .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    /* dim effect */
+    z-index: -1;
+}
+
+/* Make sure main content is above video */
+.content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
