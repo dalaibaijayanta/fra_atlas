@@ -6,12 +6,12 @@
     <title>FRA OCR Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Tesseract.js -->
-    <script src="https://unpkg.com/tesseract.js@v4.1.1/dist/tesseract.min.js"></script>
-
-    <!-- Google Fonts (optional, for professional typography) -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Tesseract.js (OCR) -->
+    <script src="https://unpkg.com/tesseract.js@v4.1.1/dist/tesseract.min.js"></script>
+    <!-- PDF.js (PDF preview + page rendering) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
 
 <body>
@@ -21,7 +21,6 @@
     </header>
 
     <main class="container">
-        <!-- LEFT: Upload + OCR Controls -->
         <section class="left">
             <div class="card">
                 <h2>📂 Upload File</h2>
@@ -29,6 +28,7 @@
                     <input id="fileInput" type="file" accept="image/*,application/pdf" />
                     <span>Select Image / PDF</span>
                 </label>
+                <div id="fileName" class="progress"></div>
 
                 <h3>🌐 Select Language(s)</h3>
                 <div class="controls">
@@ -37,11 +37,19 @@
                     <label><input type="checkbox" id="lang-ori" /> Odia (ori)</label>
                 </div>
 
-                <button id="startOcr" class="btn primary">🚀 Start OCR</button>
+                <div class="controls">
+                    <button id="startOcr" class="btn primary">🚀 Start OCR</button>
+                </div>
 
                 <div id="previewWrap">
                     <p><strong>Preview:</strong></p>
-                    <img id="preview" alt="Preview will appear here" />
+                    <img id="preview" alt="Preview will appear here" style="display:none" />
+                    <canvas id="pdfCanvas" style="display:none"></canvas>
+                    <div id="pager" class="pager" style="display:none">
+                        <button id="prevPage" class="btn secondary">◀ Prev</button>
+                        <span id="pageInfo"></span>
+                        <button id="nextPage" class="btn secondary">Next ▶</button>
+                    </div>
                 </div>
 
                 <div class="meta">
@@ -53,7 +61,6 @@
             </div>
         </section>
 
-        <!-- RIGHT: OCR Results + Saved Records -->
         <section class="right">
             <div class="card">
                 <h2>📝 Extracted Text</h2>
